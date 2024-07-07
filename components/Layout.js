@@ -1,73 +1,46 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Layout.module.css';
-import utilStyles from '../styles/Utils.module.css';
-import Link from 'next/link';
-
-const name = 'Spandan Sen Choudhury';
-export const siteTitle = "Spandan's Blog";
-
-export default function Layout({ children, home }) {
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import Navbar from "./Navbar";
+const SimpleLayout = ({ children }) => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
+    <div className="min-h-screen bg-gray-100 font-mono">
+      {/* Navbar */}
+      <Navbar />
+      {/* Header with Image */}
+      <header className="bg-white shadow-sm">
+        <div className="max-w-6xl mx-auto px-4 py-8 flex items-center">
+          <div className="mr-12">
+            {" "}
+            {/* Increased margin-right here */}
             <Image
-              priority
               src="/images/profilepic.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
+              alt="Spandan Sen Choudhury"
+              width={100}
+              height={100}
+              className="rounded-full"
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profilepic.jpg"
-                  className={utilStyles.borderCircle}
-                  height={70}
-                  width={70}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
+          </div>
+          <div>
+            <h1 className="text-3xl font-bold text-gray-800">
+              Spandan Sen Choudhury
+            </h1>
+            <p className="text-gray-600">Welcome to my personal blog</p>
+          </div>
         </div>
-      )}
+      </header>
+
+      {/* Main Content */}
+      <main className="max-w-6xl mx-auto px-4 py-8">{children}</main>
+
+      {/* Footer */}
+      <footer className="bg-white border-t">
+        <div className="max-w-6xl mx-auto px-4 py-6 text-center text-gray-600">
+          © 2024 Spandan's Blog. All rights reserved.
+        </div>
+      </footer>
     </div>
   );
-}
+};
+
+export default SimpleLayout;
