@@ -10,7 +10,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout>
       <Head>
-        <title>My Personal Blog</title>
+        <title>Spandan's Blog</title>
       </Head>
       <main className="max-w-6xl mx-auto px-4 py-8 font-mono">
         <h1 className="text-3xl font-bold mb-8">My Personal Blog</h1>
