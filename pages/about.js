@@ -30,11 +30,8 @@ export default function About() {
               and web development.
             </p>
             <p className="mb-4">
-              With several years of experience in the field of RF testing, I've
-              worked on a variety of projects ranging from mobile devices to
-              satellite communications. In my free time, I enjoy exploring the
-              world of web development, constantly learning new technologies and
-              frameworks.
+              I have worked in development of RF measurement software solutions
+              using Spectrum Analyzers
             </p>
             <p className="mb-4">
               This blog is a platform for me to share insights from both these
