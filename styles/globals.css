@@ -14,17 +14,8 @@ p {
   font: revert;
 }
 
-li {
-  font: revert;
-}
-
 * {
   box-sizing: border-box;
-}
-
-a {
-  color: #0070f3;
-  text-decoration: none;
 }
 
 a:hover {
@@ -41,6 +32,13 @@ ol {
 }
 
 ul {
+  font: revert;
+  list-style: revert;
+}
+p {
+  font: revert;
+}
+pre {
   font: revert;
 }
 

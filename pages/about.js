@@ -13,16 +13,7 @@ export default function About() {
       <main className="max-w-4xl mx-auto px-4 py-8 font-mono">
         <h1 className="text-3xl font-bold mb-8">About Me</h1>
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-          <div className="w-64 h-64 relative rounded overflow-hidden">
-            <Image
-              src="/images/profilepic.jpg"
-              alt="Profile picture"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
           <div className="flex-1">
-            <h2 className="text-2xl font-bold mb-4">Spandan Sen Choudhury</h2>
             <p className="mb-4">
               Hello! I'm Spandan, an RF Test engineer with a passion for
               building websites. Welcome to my corner of the internet where I
@@ -41,11 +32,11 @@ export default function About() {
             </p>
             <h3 className="text-xl font-bold mb-2">My Interests</h3>
             <ul className="list-disc list-inside mb-4">
-              <li>RF Circuit Design</li>
+              <li>RF Measurements</li>
               <li>Antenna Theory</li>
-              <li>Web Development (React, Next.js)</li>
-              <li>IoT and Wireless Communications</li>
+              <li>Web Development</li>
               <li>Technical Writing</li>
+              <li>AI</li>
             </ul>
             <p>
               Feel free to explore my blog posts and don't hesitate to reach out
