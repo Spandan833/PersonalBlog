@@ -7,18 +7,26 @@ excerpt: "Channel power is an important measurement.."
 
 ## What is Channel Power?
 
+<div>
 To understand what Channel Power is, let us first understand what a channel is. The channel is a region in the frequency spectrum and can be defined by
 
     1. Start & Stop Frequency
     2. Center Frequency and Span
 
-For a single tone signal all the power is located at a single frequency. The power of such a signal is the power at that frequency. So if you are using a Soft Front Panel, you can put a marker at the position where you want to measure the power and the marker gives the power at that location. But for spread spectrum signals, power is distributed across a continuous range of frequencies. The measurement has to take into account the sum of power for every frequency component within the designated bandwidth. This is accomplished by integrating the power over the range of frequency and hence this method is called Integrated Bandwidth (IBW)method.
+For a single tone signal, all the power is located at a single frequency. The power of such a signal is the power at that frequency. So if you are using a Soft Front Panel, you can put a marker at the position where you want to measure the power and the marker gives the power at that frequency. But for spread spectrum signals, power is distributed across a continuous range of frequencies. The measurement has to take into account the sum of power for every frequency component within the designated bandwidth. This is accomplished by integrating the power over the range of frequency and hence this method is called Integrated Bandwidth (IBW)method.
 
 The sum of all power in the channel is called channel power. Channel power is usually measured in dBm or Watts.
 
+![SpecAnImage](/images/SpecAnImage.jpeg)
+<img src="/images/SpecAnImage.jpeg" height= "300">
+
+</div>
+
 ## How is Channel Power measured?
 
-Channel Power can is almost always measued with a Spectrum Analyzer which converts time domain data into the frequency domain. A spectrum analyzer is a device that measures and displays power of a signal (strength) as it varies by frequency within its frequency range (spectrum). The frequency appears on the horizontal (X) axis, and the amplitude is displayed on the vertical (Y) axis.
+Channel Power can be measured with a Spectrum Analyzer which converts the signal from time domain data into the frequency domain. Spectrum analyzer measures and displays power of a signal (strength) as it varies by frequency within its frequency range (spectrum). The frequency appears on the horizontal (X) axis, and the amplitude is displayed on the vertical (Y) axis.
+
+## Spectrum Analyzers
 
 Spectrum Analyzers come in a variety of forms including benchtop and handheld devices. Traditional spectrum analyzers use a swep tuned LO to analyze the signal. They are able to provide amplitude data only and are unable to capture the phase information. On the otherhand, Vector Signal Analyzers can analyze both magnitude and phase of a signal. Vector Signal Analyzer use ADC to digitize the signal using a high speed Analog to Digital Converter (ADC).
 

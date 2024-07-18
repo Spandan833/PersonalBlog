@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
@@ -11,41 +10,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white sticky top-0 z-50">
+    <nav className="bg-violet-300 sticky top-0 z-50 shadow-sm">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
-          <div className="flex items-center">
-            <header className="bg-inherit shadow-sm">
-              <div className="max-w-2xl mx-auto flex items-center">
-                <div className="mr-12">
-                  {" "}
-                  {/* Increased margin-right here */}
-                  <Image
-                    src="/images/profilepic.jpg"
-                    alt="Spandan Sen Choudhury"
-                    width={50}
-                    height={50}
-                    className="rounded-full"
-                  />
-                </div>
-                <div>
-                  <p className="text-xl font-bold text-gray-800">
-                    Hello! I am Spandan
-                  </p>
-                  <p className="text-gray-600 font-bold">
-                    Welcome to my personal blog
-                  </p>
-                </div>
-              </div>
-            </header>
-          </div>
-          <div className="hidden md:flex space-x-4">
+        <div className="flex justify-center items-center py-4 relative">
+          <div className="hidden md:flex space-x-20">
             <NavLink href="/">Home</NavLink>
             <NavLink href="/about">About</NavLink>
             <NavLink href="/blog">Blog</NavLink>
             <NavLink href="/contact">Contact</NavLink>
           </div>
-          <div className="md:hidden">
+          <div className="md:hidden absolute right-4">
             <button
               onClick={toggleMenu}
               className="text-white focus:outline-none"
@@ -55,7 +29,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
