@@ -25,14 +25,14 @@ export default function Home({ allPostsData }) {
                   src={image || "/images/placeholder.jpg"}
                   alt={title}
                   width={400}
-                  height={200}
+                  height={300}
                   objectFit="cover"
                 />
               </div>
               <div className="p-6">
-                <h2 className="text-xl font-bold mb-2">{title}</h2>
-                <p className="text-sm text-gray-600 mb-2">{`${author} - ${date}`}</p>
-                <p className="text-gray-700 mb-4">{excerpt}</p>
+                <h2 className="text-xl font-bold mb-1">{title}</h2>
+                <p className="text-sm text-gray-600 mb-1">{`${author} - ${date}`}</p>
+                <p className="text-gray-700 mb-2">{excerpt}</p>
                 <Link href={`/posts/${id}`}>
                   <a className="text-blue-600 hover:underline">Read more</a>
                 </Link>
