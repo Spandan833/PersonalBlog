@@ -10,9 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        mono: ["IBM Plex Mono", "Courier New", "Courier", "monospace"],
-      },
+      // fontFamily: {
+      //   mono: ["IBM Plex Mono", "Courier New", "Courier", "monospace"],
+      // },
     },
   },
   plugins: [],

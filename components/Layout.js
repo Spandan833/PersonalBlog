@@ -32,7 +32,7 @@ const SimpleLayout = ({ children }) => {
         </div>
       </header>
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-4 py-8">{children}</main>
+      <main className="w-full mx-auto px-4 py-8">{children}</main>
 
       {/* Footer */}
       <footer className="bg-white border-t">

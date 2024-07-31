@@ -7,11 +7,10 @@ excerpt: "Channel power is an important measurement.."
 
 ## What is Channel Power?
 
-<div>
 To understand what Channel Power is, let us first understand what a channel is. The channel is a region in the frequency spectrum and can be defined by
 
-    1. Start & Stop Frequency
-    2. Center Frequency and Span
+- Start & Stop Frequency
+- Center Frequency and Span
 
 For a single tone signal, all the power is located at a single frequency. The power of such a signal is the power at that frequency. So if you are using a Soft Front Panel, you can put a marker at the position where you want to measure the power and the marker gives the power at that frequency. But for spread spectrum signals, power is distributed across a continuous range of frequencies. The measurement has to take into account the sum of power for every frequency component within the designated bandwidth. This is accomplished by integrating the power over the range of frequency and hence this method is called Integrated Bandwidth (IBW)method.
 
