@@ -26,7 +26,7 @@ export default function Home({ allPostsData }) {
   );
 }
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const allPostsData = getSortedPostsData().slice(0, 6);
   return {
     props: { allPostsData },
   };
