@@ -18,11 +18,7 @@ export default function Articles({ allPostsData }) {
         <ul className="article-list">
           {allPostsData.map((article) => (
             <li key={article.id || article.title} className="article-item">
-              <a
-                href={`/posts/${article.id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={`/posts/${article.id}`} rel="noopener noreferrer">
                 <h3>{article.title}</h3>
               </a>
               {/* Display title if no URL */}
