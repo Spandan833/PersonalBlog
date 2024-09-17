@@ -1,6 +1,6 @@
 ---
 title: "How I use Generative AI in my day to day work"
-date: "2024-08-01"
+date: "2024-05-01"
 excerpt: "Unless you have been living under a rock over the past couple of years..."
 ---
 
@@ -16,4 +16,6 @@ While its ability to follow exact to the tee instructions, it does a good job of
 
 ## Open source LLM
 
-So far I've mentioned about proprietary LLMs, but Meta and Google have release open source LLMs as well. Llama 3 is Meta's flagship model and also open source. You can even access it through meta.ai . The model seems
+So far I've mentioned about proprietary LLMs, but Meta and Google have release open source LLMs as well. Llama 3 is Meta's flagship model and also open source. You can even access it through <a href="meta.ai">meta.ai</a>. The model has impressive capability in text generation and performs reasonably on simpler coding tasks. However its not quite good at complex tasks like debugging and creative writing.
+
+Another newcomer making waves in the Open Source models is Mixtral, a French startup which has been releasing models of various degrees of capability including 7B and 22B variants. These model have varying degree of capabilities in wide range of tasks.

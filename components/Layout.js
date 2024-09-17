@@ -59,18 +59,18 @@ const Layout = ({ children }) => {
             </nav>
 
             {/* Social icons */}
-            <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+            <div className="hidden md:flex items-center justify-end md:flex-1 space-x-3 lg:w-0">
               <SocialIcon
-                href="https://github.com/yourusername"
+                href="https://github.com/Spandan833"
                 icon={<Github size={20} />}
               />
               <SocialIcon
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/spandan-sen-choudhury-533807182/"
                 icon={<Linkedin size={20} />}
               />
               <SocialIcon
-                href="https://twitter.com/yourusername"
-                icon={<Twitter size={20} />}
+                href="https://twitter.com/Spandan833"
+                icon={<X size={30} />}
               />
             </div>
           </div>
