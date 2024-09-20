@@ -59,7 +59,7 @@ const NavLink = ({ href, children, mobile }) => (
         ? "block text-white hover:bg-purple-700 hover:text-purple-200 px-3 py-2 rounded-md text-base font-medium"
         : "text-white hover:bg-purple-700 hover:text-purple-200 px-3 py-2 rounded-md text-sm font-medium"
     }`}
-  >
+    legacyBehavior>
     {children}
   </Link>
 );

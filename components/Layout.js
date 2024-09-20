@@ -18,19 +18,19 @@ const Layout = ({ children }) => {
           <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
             {/* Logo */}
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <Link href="/">
-                <a className="flex items-center">
-                  <Image
-                    src="/images/profilepic.jpg"
-                    alt="Spandan's Blog Logo"
-                    width={40}
-                    height={40}
-                    className="rounded-full"
-                  />
-                  <span className="ml-2 text-xl font-bold text-gray-900">
-                    Spandan's Blog
-                  </span>
-                </a>
+              <Link href="/" className="flex items-center">
+
+                <Image
+                  src="/images/profilepic.jpg"
+                  alt="Spandan's Blog Logo"
+                  width={40}
+                  height={40}
+                  className="rounded-full"
+                />
+                <span className="ml-2 text-xl font-bold text-gray-900">
+                  Spandan's Blog
+                </span>
+
               </Link>
             </div>
 
@@ -142,23 +142,23 @@ const Layout = ({ children }) => {
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/">
-                    <a className="text-gray-300 hover:text-white">Home</a>
+                  <Link href="/" className="text-gray-300 hover:text-white">
+                    Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about">
-                    <a className="text-gray-300 hover:text-white">About</a>
+                  <Link href="/about" className="text-gray-300 hover:text-white">
+                    About
                   </Link>
                 </li>
                 <li>
-                  <Link href="/articles">
-                    <a className="text-gray-300 hover:text-white">Articles</a>
+                  <Link href="/articles" className="text-gray-300 hover:text-white">
+                    Articles
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact">
-                    <a className="text-gray-300 hover:text-white">Contact</a>
+                  <Link href="/contact" className="text-gray-300 hover:text-white">
+                    Contact
                   </Link>
                 </li>
               </ul>
@@ -191,15 +191,15 @@ const Layout = ({ children }) => {
 };
 
 const NavLink = ({ href, children, mobile }) => (
-  <Link href={href}>
-    <a
-      className={`text-base font-medium text-gray-500 hover:text-gray-900 ${
-        mobile ? "block px-3 py-2 rounded-md text-base font-medium" : ""
-      }`}
-    >
-      {children}
-    </a>
-  </Link>
+  (<Link
+    href={href}
+    className={`text-base font-medium text-gray-500 hover:text-gray-900 ${
+      mobile ? "block px-3 py-2 rounded-md text-base font-medium" : ""
+    }`}>
+
+    {children}
+
+  </Link>)
 );
 
 const SocialIcon = ({ href, icon }) => (

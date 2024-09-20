@@ -27,11 +27,11 @@ export default function Home({ allPostsData }) {
           <p className="text-xl text-gray-600 mb-8">
             Exploring the realms of RF Engineering and Web Development
           </p>
-          <Link href="/about">
-            <a className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
-              Learn More About Me
-              <ArrowRight className="ml-2" size={20} />
-            </a>
+          <Link
+            href="/about"
+            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">
+            Learn More About Me<ArrowRight className="ml-2" size={20} />
+
           </Link>
         </section>
 
@@ -44,11 +44,11 @@ export default function Home({ allPostsData }) {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Link href="/articles">
-              <a className="inline-flex items-center px-6 py-3 bg-gray-200 text-gray-800 rounded-full hover:bg-gray-300 transition duration-300">
-                View All Articles
-                <ArrowRight className="ml-2" size={20} />
-              </a>
+            <Link
+              href="/articles"
+              className="inline-flex items-center px-6 py-3 bg-gray-200 text-gray-800 rounded-full hover:bg-gray-300 transition duration-300">
+              View All Articles<ArrowRight className="ml-2" size={20} />
+
             </Link>
           </div>
         </section>
@@ -65,14 +65,14 @@ export default function Home({ allPostsData }) {
               "Python",
               "Antennas",
             ].map((topic) => (
-              <Link
+              (<Link
                 href={`/topics/${topic.toLowerCase().replace(" ", "-")}`}
                 key={topic}
-              >
-                <a className="bg-gray-100 rounded-lg p-4 text-center hover:bg-gray-200 transition duration-300">
-                  {topic}
-                </a>
-              </Link>
+                className="bg-gray-100 rounded-lg p-4 text-center hover:bg-gray-200 transition duration-300">
+
+                {topic}
+
+              </Link>)
             ))}
           </div>
         </section>

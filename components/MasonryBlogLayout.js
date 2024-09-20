@@ -29,8 +29,8 @@ const MasonryBlogLayout = ({ allPostsData }) => {
               <h2 className="text-xl font-bold mb-1">{title}</h2>
               <p className="text-sm text-gray-600 mb-1">{`${author} - ${date}`}</p>
               <p className="text-gray-700 mb-2">{excerpt}</p>
-              <Link href={`/posts/${id}`}>
-                <a className="text-blue-600 hover:underline">Read more</a>
+              <Link href={`/posts/${id}`} className="text-blue-600 hover:underline">
+                Read more
               </Link>
             </div>
           </div>

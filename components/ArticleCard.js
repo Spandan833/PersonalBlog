@@ -34,14 +34,14 @@ const ArtilcleCard = ({ post }) => {
         </h3>
         <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
         <div className="flex justify-between items-center">
-          <Link href={`/posts/${post.id}`}>
-            <a className="text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-200 inline-flex items-center group">
-              Read More
-              <ArrowRight
-                className="ml-2 transition-transform duration-200 group-hover:translate-x-1"
-                size={18}
-              />
-            </a>
+          <Link
+            href={`/posts/${post.id}`}
+            className="text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-200 inline-flex items-center group">
+            Read More<ArrowRight
+              className="ml-2 transition-transform duration-200 group-hover:translate-x-1"
+              size={18}
+            />
+
           </Link>
           <div className="flex -space-x-2">
             {post.authors &&
