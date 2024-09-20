@@ -3,6 +3,7 @@ title: "Basics of Channel Power measurement"
 date: "2024-05-02"
 author: "Spandan Sen Choudhury"
 excerpt: "Channel power is an important measurement.."
+image: "/images/SpecAnImage.jpeg"
 ---
 
 ## What is Channel Power?
@@ -15,8 +16,6 @@ To understand what Channel Power is, let us first understand what a channel is. 
 For a single tone signal, all the power is located at a single frequency. The power of such a signal is the power at that frequency. So if you are using a Soft Front Panel, you can put a marker at the position where you want to measure the power and the marker gives the power at that frequency. But for spread spectrum signals, power is distributed across a continuous range of frequencies. The measurement has to take into account the sum of power for every frequency component within the designated bandwidth. This is accomplished by integrating the power over the range of frequency and hence this method is called Integrated Bandwidth (IBW)method.
 
 The sum of all power in the channel is called channel power. Channel power is usually measured in dBm or Watts.
-
-</div>
 
 ## How is Channel Power measured?
 

@@ -15,32 +15,20 @@ export default function About() {
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           <div className="flex-1">
             <p className="mb-4">
-              Hello! I'm Spandan, an RF Test engineer with a passion for
-              building websites. Welcome to my corner of the internet where I
-              share my thoughts, experiences, and knowledge about RF engineering
-              and web development.
-            </p>
-            <p className="mb-4">
-              I have worked in development of RF measurement software solutions
-              using Spectrum Analyzers
-            </p>
-            <p className="mb-4">
-              This blog is a platform for me to share insights from both these
-              worlds. You'll find articles about RF engineering concepts,
-              testing methodologies, as well as web development tutorials and my
-              experiences with different programming languages and frameworks.
+              Hello! I'm Spandan, an RF Software Engineer. Welcome to my corner
+              of the internet where I share my thoughts and experiences. Lately
+              I have been learning about Neural networkds.
             </p>
             <h3 className="text-xl font-bold mb-2">My Interests</h3>
             <ul className="list-disc list-inside mb-4">
               <li>RF Measurements</li>
-              <li>Antenna Theory</li>
-              <li>Web Development</li>
-              <li>Technical Writing</li>
-              <li>AI</li>
+              <li>Artificial Intelligence</li>
+              <li>Software Engineering</li>
             </ul>
             <p>
-              Feel free to explore my blog posts and don't hesitate to reach out
-              if you have any questions or just want to connect!
+              Feel free to explore my blog posts and don't hesitate to me via
+              Spandanssc@gmail.comc reach out if you have any questions or just
+              want to connect!
             </p>
           </div>
         </div>
