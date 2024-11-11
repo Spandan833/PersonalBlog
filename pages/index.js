@@ -42,7 +42,7 @@ export default function Home({ allPostsData }) {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-sans">
         {/* Hero Section */}
-        <section className="py-20 lg:py-32">
+        <section className="py-20 lg:py-8">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
               Tech Insights & Engineering Excellence
@@ -72,14 +72,8 @@ export default function Home({ allPostsData }) {
         </section>
 
         {/* Featured Posts */}
-        <section className="py-16 bg-gray-50 rounded-3xl px-8 mb-16">
+        <section className="py-8 bg-gray-50 rounded-3xl px-8 mb-8">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 flex items-center">
-              <span className="bg-blue-100 text-blue-600 p-2 rounded-lg mr-4">
-                📌
-              </span>
-              Featured Articles
-            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {allPostsData.slice(0, 3).map((post) => (
                 <ArticleCard key={post.id} post={post} />
@@ -98,7 +92,7 @@ export default function Home({ allPostsData }) {
         </section>
 
         {/* Topics Grid */}
-        <section className="py-16 mb-16">
+        <section className="py-8 mb-16">
           <h2 className="text-3xl font-bold mb-12 flex items-center">
             <span className="bg-purple-100 text-purple-600 p-2 rounded-lg mr-4">
               🎯
