@@ -3,7 +3,8 @@ title: "Spectrum Analyzers"
 date: "2024-03-02"
 author: "Spandan Sen Choudhury"
 excerpt: "Spectrum analyzer is a device which ..."
-image: "/images/SpecAnImage.jpeg"
+image: "/images/SpectrumAnalyzer.webp"
+tags: "RF Engineering"
 ---
 
 ## Spectrum Analyzers

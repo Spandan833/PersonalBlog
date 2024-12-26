@@ -3,7 +3,8 @@ title: "Basics of Channel Power measurement"
 date: "2024-05-02"
 author: "Spandan Sen Choudhury"
 excerpt: "Channel power is an important measurement.."
-image: "/images/SpecAnImage.jpeg"
+image: "/images/SpectrumAnalyzer.webp"
+tags: "RF Engineering"
 ---
 
 ## What is Channel Power?
