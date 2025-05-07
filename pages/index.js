@@ -92,7 +92,7 @@ export default function Home({ allPostsData }) {
         </section>
 
         {/* Topics Grid */}
-        <section className="py-8 mb-16">
+        <section className="py-8 mb-16"> 
           <h2 className="text-3xl font-bold mb-12 flex items-center">
             <span className="bg-purple-100 text-purple-600 p-2 rounded-lg mr-4">
               🎯
