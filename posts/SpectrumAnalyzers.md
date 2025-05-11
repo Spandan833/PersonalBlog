@@ -35,7 +35,6 @@ A detector is used to measure the amplitude of the signal passing through the fi
 
 
 
-
 ### FFT Spectrum Analyzer
 
 FFT Spectrum analyzers use a high speed ADC to sample the signal at a high rate, producing a block of discrete time-domain samples. The sampling rate should be such that it statisfies the nyquist criterion i.e. the sampling rate should be greater than twice the highest frequency present in the signal. Then a specialized chip performs Fast Fourier Transform and converts the time domain data into frequency domain. 
