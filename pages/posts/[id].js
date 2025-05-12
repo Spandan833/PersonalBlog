@@ -1,30 +1,38 @@
+// pages/posts/[id].js
+
 import Link from "next/link";
 import Head from "next/head";
-import Script from "next/script";
+// Removed Script import as it wasn't used
 import Layout from "../../components/Layout.js";
 import { getAllPostIds, getPostData } from "../../lib/posts.js";
 
 import utilStyles from "../../styles/Utils.module.css";
+
 export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article className="max-w-4xl mx-auto">
+      <article className="max-w-2xl mx-auto prose prose-lg max-w-none">
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
-          <div className="text-sm text-gray-600 mb-2">{postData.date}</div>
+          {/* Tailwind classes might be better here too unless utilStyles is essential */}
+          <div className="text-sm text-gray-600 mb-4"> {/* Increased mb slightly */}
+            {postData.date}
+          </div>
         </div>
+        {/* This div now inherits the prose styling */}
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>
   );
 }
 
+// --- getStaticPaths and getStaticProps remain the same ---
+
 export async function getStaticPaths() {
   const paths = getAllPostIds();
-
   return {
     paths,
     fallback: false,
@@ -33,7 +41,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
-
   return {
     props: {
       postData,
