@@ -32,7 +32,7 @@ Since the LO is swept over a frequency range, the mixing product are also swept.
 
 The bandwidth of this filter can be adjusted by the user of the analyzer and is called the *Resolution Bandwidth* of the sweep. A low resoultion bandwidth enables the Spectrum Analyzer to resolve closely separated frequency components but increases the time taken to complete the frequency sweep.
 
-###
+### Envelope detector
 
 A detector is used to measure the amplitude of the signal passing through the filter. As the LO sweeps the frequency range specified by the user, commonly called span, all the frequency components in that range are detected.
 

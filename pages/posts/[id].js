@@ -11,10 +11,11 @@ import utilStyles from "../../styles/Utils.module.css";
 export default function Post({ postData }) {
   return (
     <Layout>
-      <Head>
+      
+        <Head>
         <title>{postData.title}</title>
       </Head>
-      <article className="max-w-2xl mx-auto prose prose-lg max-w-none">
+      <article className="max-w-2xl mx-auto prose prose-lg">
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
           {/* Tailwind classes might be better here too unless utilStyles is essential */}
